@@ -1,0 +1,35 @@
+<idea-plugin version="2">
+    <id>com.johnlindquist.OpenInDebuggex</id>
+    <name>OpenInDebuggex</name>
+    <version>1.0</version>
+    <vendor email="johnlindquist@gmail.com" url="http://www.johnlindquist.com">johnlindquist.com</vendor>
+    <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="107.105"/>
+
+    <description><![CDATA[
+            Place your cursor on a RegExp. Hit alt+enter, select "Open in Debuggex". This will launch your RegExp at debuggex.com
+            ]]>
+    </description>
+
+    <depends>com.intellij.modules.lang</depends>
+
+    <application-components>
+        <!-- Add your application components here -->
+    </application-components>
+
+    <project-components>
+        <!-- Add your project components here -->
+    </project-components>
+
+    <actions>
+
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <intentionAction>
+            <className>com.johnlindquist.OpenInDebuggex</className>
+            <category>RegExp</category>
+            <descriptionDirectoryName>RegExp</descriptionDirectoryName>
+        </intentionAction>
+    </extensions>
+</idea-plugin>
